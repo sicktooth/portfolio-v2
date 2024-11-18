@@ -1,15 +1,4 @@
-@font-face {
-  font-family: "Inter";
-  src: url(/fonts/Inter-Medium.ttf);
-  font-style: normal;
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Inter";
-  src: url(/fonts/Inter-Light.ttf);
-  font-style: normal;
-  font-weight: 300;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 * {
   margin: 0;
   padding: 0;
