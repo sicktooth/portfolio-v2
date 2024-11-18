@@ -37,7 +37,7 @@ body.light-mode img {
   filter: invert(100%);
 }
 body {
-  background-image: url('./assets/background.webp');
+  background-image: url('../assets/background.webp');
   background-repeat: no-repeat;
   background-attachment: fixed;
   backdrop-filter: blur(5px);
@@ -287,6 +287,91 @@ summary {
 .education-item:last-of-type {
   border-bottom: solid var(--light-gray) 1px;
 }
+
+/* */
+#certifications{
+  display: flex;
+  gap: 48px;
+  margin-top: 96px;
+}
+.cert-header {
+  width: 40%;
+}
+
+.cert-body {
+  width: 60%;
+}
+
+.cert-row {
+  display: flex;
+  gap: 2.5rem;
+  margin: 3.125rem auto;
+}
+
+.cert1 {
+  width: 100%;
+  transition: all 0.7s;
+}
+
+.cert1 h3 {
+  display: none;
+  color: #fff;
+}
+
+.cert1:hover h3 {
+  display: block;
+}
+
+.cert1:hover {
+  scale: 1.05;
+}
+
+.cert_1, .cert_2, .cert_3, .cert_4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cert_1 {
+  background-image: url("../images/Responsive-web-design-cert.webp");
+}
+.cert_1:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/Responsive-web-design-cert.webp");
+}
+
+.cert_2 {
+  background-image: url("../images/CSS-cert.webp");
+}
+.cert_2:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/CSS-cert.webp");
+}
+
+.cert_3 {
+  background-image: url("../images/HTML-cert.webp");
+}
+.cert_3:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/HTML-cert.webp");
+}
+
+.cert_4 {
+  background-image: url("../images/Coding-for-marketers-cert.webp");
+}
+.cert_4:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/Coding-for-marketers-cert.webp");
+}
+
+.description {
+  width: 35%;
+  line-height: 2;
+  margin:0.9375rem auto;
+}
+
+/* */
+
 .profession {
   font-weight: 300;
 }
@@ -322,75 +407,4 @@ summary {
   padding: 8px;
   background-color: var(--dark-gray);
   border-radius: 50%;
-}
-
-@media (max-width: 767px) {
-  .nav-menu li {
-    display: none;
-  }
-  .nav-menu li.nav-menu-item-contact {
-    display: initial;
-  }
-  .hero-title {
-    font-size: 9vw;
-    align-self: flex-start;
-  }
-  .about {
-    flex-direction: column;
-  }
-  .about-title-div {
-    width: 100%;
-  }
-  .about-description-div {
-    width: 100%;
-  }
-
-  .skills {
-    flex-direction: column;
-  }
-  .skills-title-div {
-    width: 100%;
-  }
-  .skills-description-div {
-    width: 100%;
-  }
-
-  .experiences {
-    flex-direction: column;
-  }
-  .experiences-title-div {
-    width: 100%;
-  }
-  .experiences-item-div {
-    width: 100%;
-  }
-  .toolkit-items {
-    gap: 16px;
-  }
-  .toolkit-items img {
-    width: 64px;
-    padding: 8px;
-  }
-  .projects {
-    flex-direction: column;
-  }
-  .projects-title-div {
-    width: 100%;
-  }
-  .projects-item-div {
-    width: 100%;
-  }
-  .education {
-    flex-direction: column;
-  }
-  .education-title-div {
-    width: 100%;
-  }
-  .education-item-div {
-    width: 100%;
-  }
-  .contact-items {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 }
